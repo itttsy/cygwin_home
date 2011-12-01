@@ -1,0 +1,8 @@
+set editing-mode vi
+set completion-query-items
+
+set kanji-code utf8
+set input-meta on
+set convert-meta off
+set meta-flag on
+set output-meta on

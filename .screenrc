@@ -1,0 +1,32 @@
+startup_message off
+shell ksh
+term xterm
+termcapinfo xterm* ti@:te@
+defscrollback 1024
+defwrap on
+defencoding UTF-8
+encoding UTF-8
+hardstatus string "screen:[%n]%t"
+caption splitonly "%-w %{= kd}%n %t %{-}%+w%65< %=%m/%d(%D) %c"
+maptimeout 5
+
+#remove some stupid / dangerous key bindings
+bind s
+bind ^s
+bind .
+bind ^\
+bind \\
+
+#add some key bindings
+bind w windowlist -b
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^]  command
+bind -c resize j eval 'resize +1' 'command -c resize'
+bind -c resize k eval 'resize -1' 'command -c resize'
+bind e eval 'echo "set encoding : euc-jp"' 'encoding eucjp'
+bind u eval 'echo "set encoding : utf-8"' 'encoding utf8'
+bind s eval 'echo "set encoding : shift jis"' 'encoding sjis'
+
+#enable hardcopy with historybuffer
+bind h eval 'hardcopy -h hardcopy.log'
+
