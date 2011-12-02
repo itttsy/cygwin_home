@@ -5,7 +5,7 @@ gcc4-core
 ghostscript
 git
 inetutils
-libncursesw-devel
+ncurses
 lv
 make
 mercurial
@@ -16,3 +16,8 @@ screen
 util-linux
 vim
 zip
+
+how to compile vim
+./configure --enable-gui=no --with-local-dir=$HOME/local
+make
+make install
