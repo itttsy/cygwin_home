@@ -1,0 +1,18 @@
+additional software
+
+curl
+gcc4-core
+ghostscript
+git
+inetutils
+libncursesw-devel
+lv
+make
+mercurial
+mksh
+openssh
+perl
+screen
+util-linux
+vim
+zip
