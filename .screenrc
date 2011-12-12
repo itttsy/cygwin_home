@@ -30,3 +30,8 @@ bind s eval 'echo "set encoding : shift jis"' 'encoding sjis'
 #enable hardcopy with historybuffer
 bind h eval 'hardcopy -h hardcopy.log'
 
+#enable autolog
+screen 0
+logfile $HOME/log/screen-%n-%H-%y%m%d-%t.log
+log on
+deflog on
