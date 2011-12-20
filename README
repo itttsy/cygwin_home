@@ -1,24 +1,24 @@
 additional software
 
-・Archive
+>Archive
 zip
-・Devel
+>Devel
 git
 make
 mercurial
 mingw-binutils
 mingw-gcc-core
 mingw-gcc-g++
-・Net
+>Net
 curl
 inetutils
 openssh
 ping
-・Perl
+>Perl
 perl
-・Shells
+>Shells
 mksh
-・Utils
+>Utils
 screen
 util-linux
 
