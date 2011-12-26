@@ -1,4 +1,5 @@
 #!/bin/ksh
+export CYGWIN=nodowfilewarning
 export LANG=ja_JP.UTF-8
 export TZ=JST-9
 export SHELL=/usr/bin/ksh

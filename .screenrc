@@ -6,8 +6,8 @@ defscrollback 1024
 defwrap on
 defencoding UTF-8
 encoding UTF-8
-hardstatus string "screen:[%n]%t"
-caption splitonly "%-w %{= kd}%n %t %{-}%+w%65< %=%m/%d(%D) %c"
+hardstatus string "screen[%n]"
+caption splitonly "%-w %{= kd}%n %t %{-}%+w%65< %=%m/%d %c"
 maptimeout 5
 
 #remove some stupid / dangerous key bindings
@@ -28,10 +28,6 @@ bind u eval 'echo "set encoding : utf-8"' 'encoding utf8'
 bind s eval 'echo "set encoding : shift jis"' 'encoding sjis'
 
 #enable hardcopy with historybuffer
-bind h eval 'hardcopy -h hardcopy.log'
+logfile "$HOME/log/screen-%y%m%d.log"
+bind h eval 'hardcopy -h "$HOME/log/screen.log"'
 
-#enable autolog
-screen 0
-logfile $HOME/log/screen-%n-%H-%y%m%d-%t.log
-log on
-deflog on
